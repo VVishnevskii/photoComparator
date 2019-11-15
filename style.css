@@ -1,0 +1,58 @@
+
+
+input {
+  width: 250px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 280px;
+  height: 280px;
+}
+
+.photo {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 250px;
+  height: 200px;
+}
+
+.slider {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  min-height: 50px;
+  
+  box-shadow: 0 0 0 1px red;
+}
+
+.left {
+  width: 45%;
+  z-index: 2;
+  background-image: url(img/Koala.jpg);
+  background-size: cover;
+}
+
+.right {
+  background-image: url(img/Hydrangeas.jpg);
+  background-size: cover;
+}
